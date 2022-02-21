@@ -49,28 +49,27 @@ function drawDown() {
 }
 
 document.addEventListener('keydown', (e) => {
-    console.log(e.code);
     if(e.code === 'ArrowRight') {
         requestAnimationFrame(() => {
-            cube.rotation.y += 0.01;
+            cube.rotation.y += 0.1;
             renderer.render(scene, camera);
         });
     }
     if(e.code === 'ArrowDown') {
         requestAnimationFrame(() => {
-            cube.rotation.x += 0.01;
+            cube.rotation.x += 0.1;
             renderer.render(scene, camera);
         })
     }
     if(e.code === 'ArrowUp') {
         requestAnimationFrame(() => {
-            cube.rotation.x -= 0.01;
+            cube.rotation.x -= 0.1;
             renderer.render(scene, camera);
         })
     }
     if(e.code === 'ArrowLeft') {
         requestAnimationFrame(() => {
-            cube.rotation.y -= 0.01;
+            cube.rotation.y -= 0.1;
             renderer.render(scene, camera);
         })
     }
